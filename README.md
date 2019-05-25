@@ -1,3 +1,10 @@
+# My_Resume
+
+This is my Resume website.
+>>>>>>> 5894068c290fc2ca81d83fdd42cb8739031e942e
+=======
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,7 +75,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
-# My_Resume
-
-This is my Resume website.
->>>>>>> 5894068c290fc2ca81d83fdd42cb8739031e942e
