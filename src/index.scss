@@ -1,0 +1,613 @@
+// when we set a width, that element stays that width, 
+// despite padding or borders being applied.
+
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block
+}
+
+progress {
+  vertical-align: baseline
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+[hidden],
+template {
+  display: none
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+  outline-width: 0
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted
+}
+
+dfn {
+  font-style: italic
+}
+
+mark {
+  background: #ff0;
+  color: #000
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sub {
+  bottom: -0.25em
+}
+
+sup {
+  top: -0.5em
+}
+
+figure {
+  margin: 1em 40px
+}
+
+img {
+  border-style: none
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  margin: 0
+}
+
+optgroup {
+  font-weight: bold
+}
+
+button,
+input {
+  overflow: visible
+}
+
+button,
+select {
+  text-transform: none
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+textarea {
+  overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+  padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+/* End extract */
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.5
+}
+
+html {
+  overflow-x: hidden
+}
+
+h1 {
+  font-size: 36px
+}
+
+h2 {
+  font-size: 30px
+}
+
+h3 {
+  font-size: 24px
+}
+
+h4 {
+  font-size: 20px
+}
+
+h5 {
+  font-size: 18px
+}
+
+h6 {
+  font-size: 16px
+}
+
+.content {
+   margin: 0 auto;
+}
+
+.container {
+  padding: 0.01em 16px;
+}
+
+.container-wide {
+  width: 100%;
+}
+
+.margin-top {
+  margin-top: 16px !important;
+}
+
+.margin-bottom {
+  margin-bottom: 16px !important;
+}
+
+.light-grey,
+.hover-light-grey:hover,
+.light-gray,
+.hover-light-gray:hover {
+  color: #000 !important;
+  background-color: #f1f1f1 !important
+}
+
+.row-padding {
+  padding: 0 8px;
+  width: 100%;
+}
+
+.row-padding>.half,
+.row-padding>.third,
+.row-padding>.twothird,
+.row-padding>.threequarter,
+.row-padding>.quarter,
+.row-padding>.col {
+  padding: 0 8px;
+  float: left;
+}
+
+.container::after,
+.container::before,
+.panel::after,
+.panel::before,
+.row::after,
+.row::before,
+.row-padding::after,
+.row-padding::before,
+.cell-row::before,
+.cell-row::after,
+.clear::after,
+.clear::before,
+.bar::before,
+.bar::after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.third {
+  width: 33.33333%
+}
+
+.twothird {
+  width: 66.66666%
+}
+
+.white,
+.hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important
+}
+
+.text-grey,
+.hover-text-grey:hover,
+.text-gray,
+.hover-text-gray:hover {
+  color: #757575 !important
+}
+
+.card-4,
+.hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card::before,
+.card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-container {
+  position: relative
+}
+
+.img-dark-inset-gradient::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  box-shadow: inset 0 0 90px 70px rgba(57, 90, 66, 0.6);
+  z-index: 9;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.margin-right {
+  margin-right: 16px !important
+}
+
+.large {
+  font-size: 18px !important
+}
+
+.text-teal,
+.hover-text-teal:hover {
+  color: #009688 !important
+}
+
+.round-xlarge {
+  border-radius: 16px
+}
+
+.round-xxlarge {
+  border-radius: 32px
+}
+
+.font-tiny {
+  font-size: 10px !important
+}
+
+.font-small {
+  font-size: 12px !important
+}
+
+.font-medium {
+  font-size: 15px !important
+}
+
+.bar {
+  display: inline-block;
+  width: auto
+}
+
+.text-center {
+  display: inline-block;
+  width: auto;
+  text-align: center !important
+}
+
+.teal {
+  background-color: #009688;
+  color: #fff;
+}
+
+// Main
+.box-shadow {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.center {
+  text-align: center;
+}
+
+.hover-opacity:hover {
+  cursor: pointer;
+  color: #a3dad4;
+}
+
+// Media Queries
+// Media Queries for cols
+@media (min-width:993px) {
+  .col.l1 {
+    width: 8.33333%
+  }
+
+  .col.l2 {
+    width: 16.66666%
+  }
+
+  .col.l3 {
+    width: 24.99999%
+  }
+
+  .col.l4 {
+    width: 33.33333%
+  }
+
+  .col.l5 {
+    width: 41.66666%
+  }
+
+  .col.l6 {
+    width: 49.99999%
+  }
+
+  .col.l7 {
+    width: 58.33333%
+  }
+
+  .col.l8 {
+    width: 66.66666%
+  }
+
+  .col.l9 {
+    width: 74.99999%
+  }
+
+  .col.l10 {
+    width: 83.33333%
+  }
+
+  .col.l11 {
+    width: 91.66666%
+  }
+
+  .col.l12 {
+    width: 99.99999%
+  }
+}
+
+@media (max-width:690px) {
+  .third,
+  .twothird {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .third::before,
+  .twothird::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Utitlities
+
+// cols for small, medium and larg devices
+.col.s1 {
+  width: 8.33333%
+}
+
+.col.s2 {
+  width: 16.66666%
+}
+
+.col.s3 {
+  width: 24.99999%
+}
+
+.col.s4 {
+  width: 33.33333%
+}
+
+.col.s5 {
+  width: 41.66666%
+}
+
+.col.s6 {
+  width: 49.99999%
+}
+
+.col.s7 {
+  width: 58.33333%
+}
+
+.col.s8 {
+  width: 66.66666%
+}
+
+.col.s9 {
+  width: 74.99999%
+}
+
+.col.s10 {
+  width: 83.33333%
+}
+
+.col.s11 {
+  width: 91.66666%
+}
+
+.col.s12 {
+  width: 99.99999%
+}
+
+.col.m5 {
+  width: 41.66666%
+}
+
+.col.m6,
+.half {
+  width: 49.99999%
+}
+
+.col.m7 {
+  width: 58.33333%
+}
+
+.col.m9,
+.threequarter {
+  width: 74.99999%
+}
+
+.col.m10 {
+  width: 83.33333%
+}
+
+.col.m11 {
+  width: 91.66666%
+}
+
+.col.m12 {
+  width: 99.99999%
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.link-white a{
+  cursor: pointer;
+  color: #fff;
+}
+
+.xs-margin-all {
+  margin: 5px;
+}
