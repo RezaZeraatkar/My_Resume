@@ -262,7 +262,7 @@ h6 {
 }
 
 .content {
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
 .container {
@@ -497,11 +497,13 @@ hr {
 }
 
 @media (max-width:690px) {
+
   .third,
   .twothird {
     width: 100%;
     margin-top: 10px;
   }
+
   .third::before,
   .twothird::before {
     content: "";
@@ -603,7 +605,7 @@ hr {
   padding-bottom: 20px;
 }
 
-.link-white a{
+.link-white a {
   cursor: pointer;
   color: #fff;
 }

@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 // Components
-import Sidebar from '../components/Sidebar/sidebar';
+import Sidebar from "../components/Sidebar/sidebar";
 
 class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true,
+      open: true
     };
   }
 
@@ -17,7 +17,7 @@ class Layout extends React.Component {
     const { open } = this.state;
     return (
       // Page Container
-      <div className="margin-top" style={{ maxWidth: '1400px' }}>
+      <div className="margin-top" style={{ maxWidth: "1400px" }}>
         {open ? (
           // The Grid
           <div className="row-padding">
@@ -37,15 +37,18 @@ class Layout extends React.Component {
           <i className="fa fa-linkedin hover-opacity xs-margin-all" />
           <i className="fa fa-telegram hover-opacity xs-margin-all" />
           <p>
-            Powered by
-            {' '}
-            <a href="#myWebsiteAddress" target="_blank">Reza Zeraatkar</a>
-            {' '}
-            {' '}
-and thanks to
-            {' '}
-            {' '}
-            <a href="https://www.w3schools.com/w3css/default.asp" rel="noreferrer noopener" target="_blank">w3.css</a>
+            Powered by{" "}
+            <a href="#myWebsiteAddress" target="_blank">
+              Reza Zeraatkar
+            </a>{" "}
+            and thanks to{" "}
+            <a
+              href="https://www.w3schools.com/w3css/default.asp"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              w3.css
+            </a>
           </p>
         </footer>
       </div>
@@ -54,7 +57,7 @@ and thanks to
 }
 
 Layout.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.element.isRequired
 };
 
 export default Layout;
