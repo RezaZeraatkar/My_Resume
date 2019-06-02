@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 // Components
 import Profile from "../components/Profile/profile";
 import MyResume from "../components/My-Resume/my_Resume";
-import ResumeMaker from "../components/Resume-Maker/resume_Maker";
+import ResumeMaker from "../components/Resume-Maker/Resume_Maker";
 import Contact from "../components/Contact/contact";
 import NotFound from "../components/Not-Found/not_Found";
 
