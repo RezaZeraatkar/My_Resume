@@ -28,7 +28,7 @@ const Profile = () => (
       <div>
         <p>Hi! I&apos;m Reza Zeraatkar</p>
         <br />
-        <b>Experienced IT Engineer / Webdeveloper</b>
+        <b>Data Scientist</b>
         <br />
         <Link to="/myresume"> Go to my Resume! </Link>
       </div>
