@@ -1,0 +1,14 @@
+sudo: false
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+notifications:
+  email: r.zeraatkar1992@gmail.com
+script:
+  - yarn validate
