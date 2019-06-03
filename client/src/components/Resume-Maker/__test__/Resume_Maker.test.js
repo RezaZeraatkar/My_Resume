@@ -6,6 +6,6 @@ describe("ResumeMaker component", () => {
   it("starts with only ResumeMaker Page text", () => {
     const wrapper = shallow(<ResumeMaker />);
     const text = wrapper.find("p").text();
-    expect(text).toEqual("ResumeMaker Page");
+    expect(text).toEqual("ResumeMaker");
   });
 });

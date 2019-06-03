@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - "stable"
+  - stable
 cache:
   directories:
     - node_modules
@@ -11,4 +11,10 @@ branches:
 notifications:
   email: r.zeraatkar1992@gmail.com
 script:
-  - yarn validate
+  - npm run validate
+deploy:
+  provider: heroku
+  api_key:
+    secure: v1iHMQ7Vwnubl8EVo3VKmJnHgDlxqqsD8TUhOttYxbWoNvnFSo+wgVJASmR3XMbDnxZLS6qn6d18NYIIOFvPYLk1nC8LnZ328VVLf6HvyMbKF1cgUar8arzcPqLYZ247H3OoFUox9QQ8jBKQCGsIQ959ZGdQSydpg1cGWl4lFDaRMI/AbqX9pzf/2ZmetWhsJwvrSjOf+W9RDAZG2IdlOzAZMW8kYF9AxoFTZsT6X4DCwKIQ9CVBakJUoZDbzMW9Cbd84KRoANl+mwP77GXLFChhZ547zchZJgqCta++zibHu3wfsiZAwsF1PIRLFXZAz+CaQjjgrxJq3vrX4vawlx+GgeRRw4Sq8OIejq2TQdqDjLuvs6S5+FNOMRwkAXeNQwHXItB4nscOh8AaLraccMn0/0unl99iuJesiLci9I9Z1nL5FwI5fi83i8Mzj6haMFbH9s0bMOpN8zhuDGACmUQ9nQAMKsgJn2uI6+fNuPuJhiR8ilFyQqU+H+CTAZ4B9JnA3GvRqWMz2qpekBx/8ucyCMsH3UVz0YyUvXE/5Neoguj3q22y1vW0oxukmEgGmIfgC1/o3zc9pCPxI2WscdRRnPCi5Ps3Glf7kDRNcQGrQaHbsSN1Fqrf7dJ9/DAm6J7ibcXUykijKoRlSIOqjGtGfMFEOXxuwIEMcrfppKA=
+  app: resumesaz
+  run: resume app successfully deployed on heroku
