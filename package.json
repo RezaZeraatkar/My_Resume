@@ -13,8 +13,9 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "deploy": "npm install && npm install --prefix client && npm run validate --prefix client"
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "npm install && npm install --prefix client && npm run validate --prefix client",
+    "heroku:postbuild": "npm run start"
   },
   "dependencies": {
     "express": "4.17.1",
