@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Links from "./Links/links";
 
 class Header extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Header extends Component {
   }
 
   render() {
-    return <div> Header </div>;
+    return <Links />;
   }
 }
 

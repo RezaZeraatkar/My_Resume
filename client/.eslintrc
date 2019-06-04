@@ -1,9 +1,0 @@
-{
-	"root": true,
-	"extends": ["react-app", "plugin:prettier/recommended"],
-	"env": {
-		"node": true,
-		"es6": true,
-		"browser": true
-	}
-}
