@@ -13,7 +13,7 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { children } = this.props;
+    //const { children } = this.props;
     const { open } = this.state;
     return (
       // Page Container
@@ -25,7 +25,7 @@ class Layout extends React.Component {
               {/* Left Column */}
               <Sidebar />
             </aside>
-            <article className="twothird">{children}</article>
+            <article className="twothird">{this.props.children}</article>
           </div>
         ) : (
           <div>Closed</div>
