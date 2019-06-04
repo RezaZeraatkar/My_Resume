@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 // Styles
-import './skills.scss';
+import "./skills.scss";
 
 const Skills = () => (
   <div className="container">
@@ -25,28 +25,53 @@ const Skills = () => (
     <p className="large">
       <b>
         <i className="fa fa-asterisk fa-fw margin-right text-teal" />
-    Skills
+        Skills
       </b>
     </p>
     <p>Web Design</p>
     <div className="round-xlarge light-grey font-small">
-      <div className="container text-center round-xlarge teal" style={{ width: '90%' }}>90%</div>
+      <div
+        className="container text-center round-xlarge teal"
+        style={{ width: "90%" }}
+      >
+        90%
+      </div>
     </div>
     <p>Web Design</p>
     <div className="round-xlarge light-grey font-small">
-      <div className="container text-center round-xlarge teal" style={{ width: '90%' }}>90%</div>
+      <div
+        className="container text-center round-xlarge teal"
+        style={{ width: "90%" }}
+      >
+        90%
+      </div>
     </div>
     <p>Web Design</p>
     <div className="round-xlarge light-grey font-small">
-      <div className="container text-center round-xlarge teal" style={{ width: '90%' }}>90%</div>
+      <div
+        className="container text-center round-xlarge teal"
+        style={{ width: "90%" }}
+      >
+        90%
+      </div>
     </div>
     <p>Web Design</p>
     <div className="round-xlarge light-grey font-small">
-      <div className="container text-center round-xlarge teal" style={{ width: '90%' }}>90%</div>
+      <div
+        className="container text-center round-xlarge teal"
+        style={{ width: "90%" }}
+      >
+        90%
+      </div>
     </div>
     <p>Web Design</p>
     <div className="round-xlarge light-grey font-small">
-      <div className="container text-center round-xlarge teal" style={{ width: '90%' }}>90%</div>
+      <div
+        className="container text-center round-xlarge teal"
+        style={{ width: "90%" }}
+      >
+        90%
+      </div>
     </div>
     <br />
     <p className="large">
@@ -57,7 +82,9 @@ const Skills = () => (
     </p>
     <p>English</p>
     <div className="round-xlarge light-grey font-small">
-      <div className="text-center round-xlarge teal" style={{ width: '90%' }}>90%</div>
+      <div className="text-center round-xlarge teal" style={{ width: "90%" }}>
+        90%
+      </div>
     </div>
   </div>
 );

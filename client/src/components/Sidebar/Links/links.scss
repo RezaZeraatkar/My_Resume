@@ -1,14 +1,26 @@
-.links-container,.panel { padding:0.01em 16px }
-
-.links-container > a { 
-  //text-decoration: none;
-  color:#555555!important;
+.links-container,
+.panel {
+  padding: 0.01em 16px;
 }
 
-.margin-right{margin-right:16px!important}
+.links-container > a {
+  //text-decoration: none;
+  color: #555555 !important;
+}
 
-.large{font-size:18px!important}
+.margin-right {
+  margin-right: 16px !important;
+}
 
-.text-teal,.hover-text-teal:hover{color:#009688!important}
+.large {
+  font-size: 18px !important;
+}
 
-.link-padding { padding: 5px;}
+.text-teal,
+.hover-text-teal:hover {
+  color: #009688 !important;
+}
+
+.link-padding {
+  padding: 5px;
+}
