@@ -15,7 +15,7 @@
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "deploy": "npm install && npm install --prefix client && npm run validate --prefix client",
-    "heroku:postbuild": "npm run start"
+    "heroku:postinstall": "npm run build --prefix client"
   },
   "dependencies": {
     "express": "4.17.1",
