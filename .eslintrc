@@ -1,0 +1,10 @@
+{
+	"root": true,
+	"extends": ["react-app", "plugin:prettier/recommended", "airbnb", "plugin:jsx-a11y/recommended"],
+	"plugins": ["jsx-a11y"],
+	"env": {
+		"node": true,
+		"es6": true,
+		"browser": true
+	}
+}
