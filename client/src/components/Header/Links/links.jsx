@@ -1,18 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-// Styles
-import "./links.scss";
+import toggleOffOn from "../../../utils/utils";
 
 const Links = () => (
-  <div className="top-navbar resonsive back-teal card fixed">
-    <Link to="/">Profile</Link>
-    <Link to="/myresume">My-Resume</Link>
-    <Link to="/resumemaker">Resume-Maker</Link>
-    <Link to="contact">Contact</Link>
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fa fa-bars" />
-    </span>
+  <div>
+    <nav>
+      <ul className="top-navbar" id="toggle">
+        <li>
+          <Link className="logo" to="/">
+            <span>ResumeSaz</span>
+          </Link>
+        </li>
+        <li className="togglebtn">
+          <Link to="/" onClick={toggleOffOn}>
+            &#9776;
+          </Link>
+        </li>
+        <li>
+          <Link to="/">Profile</Link>
+        </li>
+        <li>
+          <Link to="/myresume">My-Resume</Link>
+        </li>
+        <li>
+          <Link to="/resumemaker">Resume-Maker</Link>
+        </li>
+        <li>
+          <Link to="contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
   </div>
 );
 

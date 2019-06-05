@@ -27,7 +27,7 @@ class Layout extends React.Component {
             <div className="row">
               <Header />
             </div>
-            <div className="row-padding margin-top-70">
+            <div className="row-padding margin-top-40">
               <aside className="third">
                 {/* Left Column */}
                 <Sidebar />
