@@ -5,7 +5,7 @@ import toggleOffOn from "../../../utils/utils";
 const Links = () => (
   <div>
     <nav>
-      <ul className="top-navbar" id="toggle">
+      <ul className="top-navbar card" id="toggle">
         <li>
           <Link className="logo" to="/">
             <span>ResumeSaz</span>
