@@ -10,7 +10,7 @@ const MyImage = () => (
   <div className="img-container">
     <img src={Myimage} className="img-round" alt="myimage" />
     <div className="img-caption text-white">
-      <h4>Reza Zeraatkar</h4>
+      <h5>Reza Zeraatkar</h5>
     </div>
   </div>
 );
