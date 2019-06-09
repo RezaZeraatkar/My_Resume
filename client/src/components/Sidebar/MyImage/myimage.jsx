@@ -7,10 +7,10 @@ import "./myimage.scss";
 import Myimage from "./avatar_hat.jpg";
 
 const MyImage = () => (
-  <div className="container">
+  <div className="img-container">
     <img src={Myimage} className="img-round" alt="myimage" />
-    <div className="display-bottomleft container text-white">
-      <h2>Reza Zeraatkar</h2>
+    <div className="img-caption text-white">
+      <h4>Reza Zeraatkar</h4>
     </div>
   </div>
 );

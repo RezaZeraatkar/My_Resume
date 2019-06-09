@@ -381,6 +381,13 @@ div nav ul li a.logo {
 ****************************************************
 */
 
+.img-container {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
 .img-round {
   display: block;
   max-width: 80%;
@@ -391,6 +398,18 @@ div nav ul li a.logo {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   margin: 0 auto;
+}
+
+.img-caption {
+  position: absolute;
+  left: 180px;
+  top: 200px;
+}
+
+.img-caption h4 {
+  letter-spacing: 1px;
+  color: #b8b4af;
+  text-shadow: -1px -1px 1px rgb(58, 54, 54), 1px 1px 1px rgb(71, 67, 67);
 }
 
 /*########## LAYOUT UTILITIES ##########*/
@@ -419,7 +438,7 @@ div nav ul li a.logo {
 }
 
 // .container {
-//   margin: 0 auto;
+//   padding: 14px 0;
 // }
 
 ul {

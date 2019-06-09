@@ -35,7 +35,7 @@ class Layout extends React.Component {
               <article className="twothird">{children}</article>
             </div>
             <div className="row">
-              <footer className="container teal center margin-top link-white">
+              <footer className="teal center margin-top link-white">
                 <p>Find me on social media.</p>
                 <i className="fa fa-instagram hover-opacity xs-margin-all" />
                 <i className="fa fa-twitter hover-opacity xs-margin-all" />
