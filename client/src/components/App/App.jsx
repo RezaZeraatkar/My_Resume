@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+
 // import Grid from '@material-ui/core/Grid';
 // import Paper from '@material-ui/core/Paper';
 import { BrowserRouter } from "react-router-dom";
@@ -8,18 +10,19 @@ import Layout from "../../layout/layout";
 import Routes from "../../routes/routes";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    // just a dumy state to test our enzyme config for testing reactDom is working
-    this.state = {
-      count: 0
-    };
+  constructor(props) {
+    super(props);
+    this.state = { albums: null };
+  }
+
+  componentDidMount() {
+    axios.get("/api/albums").then(res => this.setState({ albums: res.data }));
   }
 
   render() {
     return (
       <BrowserRouter>
-        <Layout>
+        <Layout albumes={this.state.albums}>
           <Routes />
         </Layout>
       </BrowserRouter>

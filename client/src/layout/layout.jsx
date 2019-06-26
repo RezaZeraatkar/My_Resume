@@ -14,12 +14,13 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, albumes } = this.props;
+    console.log(albumes);
     const { loading } = this.state;
     return (
       // Page Container
       <div className="container" style={{ maxWidth: "1400px" }}>
-        {!loading ? (
+        {!albumes ? (
           <div>Loading</div>
         ) : (
           // The Grid
