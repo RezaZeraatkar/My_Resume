@@ -1,68 +1,72 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+import CircularProgress from "@material-ui/core/CircularProgress";
+// import Container from '@material-ui/core/Container';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
 
 // Components
 import Header from "../components/Header/header";
 import Sidebar from "../components/Sidebar/sidebar";
+import Footer from "../components/Footer/footer";
 
-class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true
-    };
+const useStyles = makeStyles(theme => ({
+  root: {
+    flex: 1
+  },
+  paper: {
+    height: "100%"
+  },
+  control: {
+    padding: theme.spacing(2)
+  },
+  progress: {
+    display: "block",
+    margin: "50vh auto"
   }
+}));
 
-  render() {
-    const { children, albumes } = this.props;
-    console.log(albumes);
-    const { loading } = this.state;
-    return (
-      // Page Container
-      <div className="container" style={{ maxWidth: "1400px" }}>
+function Layout(props) {
+  // const [loading, setLoading] = useState(true);
+
+  const classes = useStyles();
+  const { children, albumes } = props;
+
+  return (
+    // Page Container
+    <div className={classes.root}>
+      <CssBaseline />
+      <Grid spacing={2} container>
         {!albumes ? (
-          <div>Loading</div>
+          <div>
+            <CircularProgress className={classes.progress} />
+          </div>
         ) : (
           // The Grid
-          <div>
-            <div className="row">
+          <>
+            <Grid item xs={12}>
               <Header />
-            </div>
-            <div className="row-padding margin-top-40">
-              <aside className="third">
-                {/* Left Column */}
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper>
                 <Sidebar />
-              </aside>
-              <article className="twothird">{children}</article>
-            </div>
-            <div className="row">
-              <footer className="teal center margin-top link-white">
-                <p>Find me on social media.</p>
-                <i className="fa fa-instagram hover-opacity xs-margin-all" />
-                <i className="fa fa-twitter hover-opacity xs-margin-all" />
-                <i className="fa fa-linkedin hover-opacity xs-margin-all" />
-                <i className="fa fa-telegram hover-opacity xs-margin-all" />
-                <p>
-                  Powered by{" "}
-                  <a href="#myWebsiteAddress" target="_blank">
-                    Reza Zeraatkar
-                  </a>{" "}
-                  and thanks to{" "}
-                  <a
-                    href="https://www.w3schools.com/w3css/default.asp"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    w3.css
-                  </a>
-                </p>
-              </footer>
-            </div>
-          </div>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper>
+                <article>{children}</article>
+              </Paper>
+            </Grid>
+            <Grid item xs={12}>
+              <Footer />
+            </Grid>
+          </>
         )}
-      </div>
-    );
-  }
+      </Grid>
+    </div>
+  );
 }
 
 Layout.propTypes = {
