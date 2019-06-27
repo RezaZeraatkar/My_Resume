@@ -2,14 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import { slide as Menu } from "react-burger-menu";
+import Grid from "@material-ui/core/Grid";
+
 // import Container from '@material-ui/core/Container';
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
 
+import "./app.scss";
 // Components
-import Header from "../components/Header/header";
-import Sidebar from "../components/Sidebar/sidebar";
+// import NavBar from "../components/NavBar/navBar";
+import SideBar from "./sidebar";
 import Footer from "../components/Footer/footer";
 
 const useStyles = makeStyles(theme => ({
@@ -36,36 +38,21 @@ function Layout(props) {
 
   return (
     // Page Container
-    <div className={classes.root}>
-      <CssBaseline />
-      <Grid spacing={2} container>
-        {!albumes ? (
-          <div>
-            <CircularProgress className={classes.progress} />
+    <>
+      {!albumes ? (
+        <div>
+          <CircularProgress className={classes.progress} />
+        </div>
+      ) : (
+        // The Grid
+        <>
+          <div id="App">
+            <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+            <div id="page-wrap" />
           </div>
-        ) : (
-          // The Grid
-          <>
-            <Grid item xs={12}>
-              <Header />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Paper>
-                <Sidebar />
-              </Paper>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Paper>
-                <article>{children}</article>
-              </Paper>
-            </Grid>
-            <Grid item xs={12}>
-              <Footer />
-            </Grid>
-          </>
-        )}
-      </Grid>
-    </div>
+        </>
+      )}
+    </>
   );
 }
 
