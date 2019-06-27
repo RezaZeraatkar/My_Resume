@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 // Styles
 import "./myimage.scss";
@@ -11,23 +10,24 @@ import Myimage from "./avatar_hat.jpg";
 const useStyles = makeStyles(theme => ({
   imgContainer: {
     position: "relative",
-    width: "100%",
+    width: "200px",
+    height: "200px",
     margin: "20px auto 0 auto",
     overflow: "hidden",
     textAlign: "center"
   },
   imgRound: {
     display: "block",
-    maxWidth: "50%",
-    height: "auto",
+    width: "200px",
+    height: "200px",
     borderRadius: "50%",
     boxShadow:
       "1px 1px 1px 0 rgba(85, 83, 83, 0.2), 0 1px 1px 0 rgba(85, 83, 83, 0.2)",
     filter: "grayscale(100%)",
     margin: "0 auto",
     [theme.breakpoints.up("md")]: {
-      height: "300px",
-      width: "300px"
+      height: "200px",
+      width: "200px"
     }
   },
   imgCaption: {
