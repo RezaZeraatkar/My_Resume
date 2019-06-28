@@ -11,11 +11,11 @@ import Footer from "../components/Footer/footer";
 // Styles
 import "./app.scss";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
     flex: 1,
     padding: "80px",
-    backgroundColor: "#ab47bc"
+    backgroundColor: "#fafafa"
   },
   paper: {
     height: "100%",
@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   circularProgress: {
     margin: "45vh 45vw"
   }
-}));
+});
 
 function Layout(props) {
   const classes = useStyles();
@@ -33,7 +33,7 @@ function Layout(props) {
     <CircularProgress className={classes.circularProgress} />
   ) : (
     <div id="App">
-      <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
+      <BurgerMenu pageWrapId="page-wrap" outerContainerId="App" />
 
       <div id="page-wrap" className={classes.root}>
         <Grid container spacing={2}>
