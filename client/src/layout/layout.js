@@ -29,10 +29,11 @@ function Layout(props) {
     const fetchItems = async () => {
       const response = await axios.get("http://localhost:8080/api/albums");
       setAlbums(response.data);
-      console.log(albums);
     };
     fetchItems();
-  }, [albums]);
+  }, []);
+
+  console.log(albums);
 
   return (
     <div>
