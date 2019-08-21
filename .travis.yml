@@ -9,6 +9,9 @@ install:
   - cd ./client && yarn install && cd ..
 cache:
   yarn: true
+  directories:
+    - node_modules
+    - client/node_modules
 branches:
   only:
     - master
