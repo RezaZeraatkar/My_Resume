@@ -6,24 +6,49 @@
   "author": "Reza Zeraatkar <r.zeraatkar1992@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "10.15.3",
-    "npm": "6.4.1"
+    "node": "12.3.1",
+    "npm": "6.9.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "deploy": "npm install && npm install --prefix client && npm run validate --prefix client",
-    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "deploy": "yarn install && yarn install --prefix client && yarn run validate --prefix client",
+    "heroku-postbuild": "yarn install --prefix client && npm run build --prefix client"
   },
   "dependencies": {
-    "express": "4.17.1",
-    "path": "0.12.7"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.1",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
+    "babel-eslint": "10.0.1",
     "concurrently": "4.1.0",
-    "nodemon": "1.19.1"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jam3": "^0.2.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "husky": "^2.3.0",
+    "nodemon": "1.19.1",
+    "prettier": "1.17.1",
+    "pretty-quick": "1.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "repository": {
     "type": "git",

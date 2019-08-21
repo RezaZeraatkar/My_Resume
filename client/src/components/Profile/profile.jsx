@@ -1,40 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card";
 
-const Profile = () => (
-  <div>
-    <div className="container card white margin-bottom">
-      <div>
-        <p>Hi! I&apos;m Reza Zeraatkar</p>
-        <b className="bold">
-          Experienced IT Engineer / Webdeveloper / Data-Scientist
-        </b>
-        <br />
-        <Link to="/myresume"> Go to my Resume! </Link>
-      </div>
-      <hr />
-    </div>
-    <div className="container card white margin-bottom">
-      <div>
-        <p>Hi! I&apos;m Reza Zeraatkar</p>
-        <br />
-        <b>Experienced IT Engineer / Webdeveloper</b>
-        <br />
-        <Link to="/myresume"> Go to my Resume! </Link>
-      </div>
-      <hr />
-    </div>
-    <div className="container card white margin-bottom">
-      <div>
-        <p>Hi! I&apos;m Reza Zeraatkar</p>
-        <br />
-        <b>Data Scientist</b>
-        <br />
-        <Link to="/myresume"> Go to my Resume! </Link>
-      </div>
-      <hr />
-    </div>
-  </div>
-);
+import RoundedCircleImage from "../MyCustomComponents/Image.js";
+import CardBody from "../CardBody/cardBody";
+import SocialIcons from "../SocialIcons/socialIcons";
 
-export default Profile;
+import MyProfileImage from "../../images/profile.jpg";
+
+function profile() {
+  return (
+    <Card
+      bg="light"
+      border="info"
+      className="text-center"
+      style={{
+        marginBottom: "10px",
+        height: "610px"
+      }}
+    >
+      <RoundedCircleImage url={MyProfileImage} />
+      <Card.Body>
+        <CardBody />
+        <SocialIcons />
+      </Card.Body>
+    </Card>
+  );
+}
+
+export default profile;
