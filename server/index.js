@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.resolve(__dirname, "..", "client", "build")));
 
   // Handle React routing, return all requests to React app
-  app.get("*", function(req, res) {
+  app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../client/build", "index.html"));
   });
 } else {
@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.resolve(__dirname, "..", "client", "public")));
 
   // Handle React routing, return all requests to React app
-  app.get("*", function(req, res) {
+  app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../client/public", "index.html"));
   });
 }
@@ -38,13 +38,11 @@ const PORT = process.env.PORT || 8080;
 
 if (process.env.NODE_ENV === "test") {
   mongoose.connect(MongoURI, { useNewUrlParser: true }).then(() => {
-    app.listen(7000, () => console.log("Listening on http://localhost:7000"));
+    app.listen(7000);
   });
 } else {
   mongoose.connect(MongoURI, { useNewUrlParser: true }).then(() => {
-    app.listen(PORT, () =>
-      console.log(`Listening on http://localhost:${PORT}`)
-    );
+    app.listen(PORT);
   });
 }
 
