@@ -11,7 +11,7 @@ branches:
   only:
     - master
 notifications:
-  email: r.zeraatkar1992@gmail.com
+  email: [r.zeraatkar1992@gmail.com]
 script:
   - npm run deploy
 deploy:
