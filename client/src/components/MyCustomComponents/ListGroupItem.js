@@ -20,7 +20,7 @@ const ListGroupItem = Styled.li`
     }
     :hover {
         transform: scale(0.99);
-        background-color: #021533;
+        background-color: ${props => (props.toRoute ? "#021533" : "#f06307")};
     }
 `;
 
