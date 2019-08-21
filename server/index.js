@@ -24,7 +24,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build", "index.html"));
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 
 // if (process.env.NODE_ENV === 'test') {
 //   mongoose.connect(MongoURI, { useNewUrlParser: true }).then(() => {

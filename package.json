@@ -17,7 +17,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "deploy": "npm install && npm install --prefix client && npm run validate --prefix client",
-    "heroku-postbuild": "npm run build --prefix client"
+    "heroku-postbuild": "cd client && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
