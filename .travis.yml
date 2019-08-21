@@ -1,8 +1,10 @@
 sudo: false
 language: node_js
 node_js:
-  - stable
-install: yarn
+  - 12.3.1
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+install: true
 cache:
   yarn: true
   directories:
