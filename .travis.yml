@@ -19,7 +19,7 @@ deploy:
   provider: heroku
   api_key:
     secure: K9l7L7xfVqOAaJ100pOGAcnYCVtPL4xeVojlgqzksh2uGq4QEpaAU2q1SWkMqDfHqk7dkiTa7TT6xqbrDivx0jckTkaOz41DiEUM5KWhaX4TP2p7CNcUUa+00pV+P1EpGH18QheyEVWNG04rB+nlTkamX5GYkZ8ZmNTAbstvN5dhBkPOe+qlRX397L/rXKNWVUk9yEA/8lV9R8rdtzFybZzCVTLDsENZJFqmKIrQ0HN4CiFKydqdfeSTzXFIbCx56vhnkLvorp407zPBzCCSoVwoiYwKLO5MsNqpLk8KOHh3zu58rnYnOu0Pgp7YMOHas3quEwTToISchwGP8Y6YDPVFtWPH9xAMfcjJ82b+x+iTNUh8YnC81tl2q9n7CyPGyrcIcBuKR0U50ehM2G5unh3gvn2pZgLu5PogkyUhVxcqqPLwPNDf89J4mjfpQqFyEGoTvKs+9ZFg6LJ7MFVe/sgn1Ov9QnCzuv2054wAOY5PUeami/iNTrqwnBh+0siJfbBtf9OuyTAI9zpWHzb1S20oHybwkK3A9sfhvci7BrHkECVTG1Oo5QYvwx2GBaEZDhDwvGbaquZ7x4/BJymU2w/pm7lRFi5ThYCYc0rlYKGIP/+ZFIHHCYzTmkKrBL6q3y33P9QiIp7/ZduYlneSWZWVTPlYOQJO2PeDU4Y8TUE=
-  app: rezazeraatkar
+  app: reza-zeraatkar
   run: resume app successfully deployed on heroku
 # before_install:
 #   - curl -o- -L https://yarnpkg.com/install.sh | bash
