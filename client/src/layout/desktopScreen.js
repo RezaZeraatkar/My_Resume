@@ -19,6 +19,7 @@ import NotFoundComponent from "../components/NotFoundComponent/notFoundComponent
 import "./styles.css";
 
 function RenderDesktop(props) {
+  const duration = 1000;
   const { routerProps } = props;
   const [pageRoute, setPageRoute] = useState(
     routerProps.routerProps.location.pathname.split("/")[1]
@@ -32,9 +33,11 @@ function RenderDesktop(props) {
   });
 
   return (
-    <Container>
-      <Row style={{ height: "40px" }} />
-      {pageRoute !== "" ? (
+    <div
+      className={pageRoute !== "" ? "main-container routes" : "main-container"}
+    >
+      <Container>
+        <Row style={{ height: "40px" }} />
         <Row>
           {/* SidebarSection */}
           <Col lg={2} xl={2}>
@@ -54,12 +57,10 @@ function RenderDesktop(props) {
               <TransitionGroup>
                 <CSSTransition
                   key={routerProps.routerProps.location.pathname.split("/")[1]}
-                  timeout={500}
-                  classNames="page"
-                  unmountOnExit
-                  mountOnEnter
+                  timeout={duration}
+                  classNames="page-slide"
                 >
-                  <div className="page">
+                  <div className="page-slide">
                     <Switch location={props.location}>
                       <Route key="/" exact path="/" component={Home} />
                       <Route
@@ -94,28 +95,9 @@ function RenderDesktop(props) {
             </BouncyDiv>
           </Col>
         </Row>
-      ) : (
-        <>
-          <Row>
-            {/* SidebarSection */}
-            <Col lg={2} xl={2} />
-            <Col lg={2} xl={2}>
-              <BouncyDiv>
-                <NavList pageRoute={pageRoute} />
-              </BouncyDiv>
-            </Col>
-            {/* Profile Section */}
-            <Col lg={6} xl={5}>
-              <BouncyDiv>
-                <Profile />
-              </BouncyDiv>
-            </Col>
-            <Col lg={2} xl={2} />
-          </Row>
-        </>
-      )}
-      <Row style={{ height: "20px" }} />
-    </Container>
+        <Row style={{ height: "20px" }} />
+      </Container>
+    </div>
   );
 }
 

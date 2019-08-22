@@ -9,7 +9,7 @@ const ListGroupItem = Styled.li`
     cursor: pointer;
     overflow: hidden;
     width: 100%;
-    transition: background-color 0.3s ease-in;
+    transition: background-color 0.1s ease-in;
     background-color: ${props => (props.toRoute ? "#021533" : "#08aeac")};
     & > a {
         display: block;
@@ -20,7 +20,7 @@ const ListGroupItem = Styled.li`
     }
     :hover {
         transform: scale(0.99);
-        background-color: ${props => (props.toRoute ? "#021533" : "#f06307")};
+        background-color: ${props => (props.toRoute ? "#021533" : "#5dc7c3")};
     }
 `;
 

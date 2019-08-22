@@ -15,7 +15,8 @@ function profile() {
       className="text-center"
       style={{
         marginBottom: "10px",
-        height: "610px"
+        height: "610px",
+        zIndex: "100"
       }}
     >
       <RoundedCircleImage url={MyProfileImage} />
