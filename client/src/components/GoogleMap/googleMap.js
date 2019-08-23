@@ -12,7 +12,7 @@ const { InfoBox } = require("react-google-maps/lib/components/addons/InfoBox");
 const GoogleMapComponent = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={8}
+      defaultZoom={18}
       defaultCenter={{ lat: 35.734182, lng: 51.548713 }}
     >
       <Marker

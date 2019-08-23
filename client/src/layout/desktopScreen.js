@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Route, Switch } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Container from "react-bootstrap/Container";
@@ -18,19 +18,39 @@ import NotFoundComponent from "../components/NotFoundComponent/notFoundComponent
 
 import "./styles.css";
 
+// Custom Hook
+function usePrevious(value) {
+  // The ref object is a generic container whose current property is mutable ...
+  // ... and can hold any value, similar to an instance property on a class
+  const ref = useRef();
+  // Store current value in ref
+  useEffect(() => {
+    ref.current = value;
+  }, [value]); // Only re-run if value changes
+
+  // Return previous value (happens before update in useEffect above)
+  return ref.current;
+}
+
 function RenderDesktop(props) {
   const duration = 1000;
   const { routerProps } = props;
   const [pageRoute, setPageRoute] = useState(
     routerProps.routerProps.location.pathname.split("/")[1]
   );
+  // Get the previous value (was passed into hook on last render)
+  const prevPageRoute = usePrevious(
+    routerProps.routerProps.location.pathname.split("/")[1]
+  );
+
+  console.log("prevPageRoute: ", prevPageRoute);
 
   useEffect(() => {
     const handleHomeStyle = () => {
       setPageRoute(routerProps.routerProps.location.pathname.split("/")[1]);
     };
     handleHomeStyle();
-  });
+  }, [routerProps.routerProps.location.pathname]);
 
   return (
     <div
@@ -54,13 +74,21 @@ function RenderDesktop(props) {
           {/* Main Section */}
           <Col lg={5} xl={5}>
             <BouncyDiv>
-              <TransitionGroup>
+              <TransitionGroup className="transition-group">
                 <CSSTransition
                   key={routerProps.routerProps.location.pathname.split("/")[1]}
-                  timeout={duration}
-                  classNames="page-slide"
+                  timeout={{ enter: duration, exit: duration }}
+                  classNames={
+                    prevPageRoute !== "" ? "page-slide" : "page-slide ps"
+                  }
+                  mountOnEnter
+                  unmountOnExit
                 >
-                  <div className="page-slide">
+                  <div
+                    className={
+                      prevPageRoute !== "" ? "page-slide" : "page-slide ps"
+                    }
+                  >
                     <Switch location={props.location}>
                       <Route key="/" exact path="/" component={Home} />
                       <Route
