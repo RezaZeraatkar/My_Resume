@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import App from "./app";
 
 // My-Styles
-// import "./index.scss";
+import "./index.css";
 
 render(
   <Router>

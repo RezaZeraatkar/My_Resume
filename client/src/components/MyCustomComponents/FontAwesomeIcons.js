@@ -19,7 +19,6 @@ const Link = styled.a`
   font-size: 14px;
   line-height: 29px;
   margin: 2px;
-  border-radius: 50%;
   :hover {
     color: #fff;
   }

@@ -7,10 +7,11 @@ import Divider from "../MyCustomComponents/Divider";
 import DoubleBorderFrame from "../MyCustomComponents/TextFrame";
 import SectionTitle1 from "../MyCustomComponents/SectionTitle1";
 import SectionTitle2 from "../MyCustomComponents/SectionTitle2";
+import ScrollbarsWrapper from "../MyCustomComponents/ScrollbarsWrapper";
 
 function Resume() {
   return (
-    <div>
+    <ScrollbarsWrapper>
       <Scrollbars style={{ height: "610px" }}>
         <Card
           id="resume"
@@ -78,7 +79,7 @@ function Resume() {
           </Card.Body>
         </Card>
       </Scrollbars>
-    </div>
+    </ScrollbarsWrapper>
   );
 }
 

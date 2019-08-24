@@ -9,88 +9,91 @@ import SectionTitle1 from "../MyCustomComponents/SectionTitle1";
 import SectionTitle3 from "../MyCustomComponents/SectionTitle3";
 import Progress from "../MyCustomComponents/Progress";
 import Progressbar from "../MyCustomComponents/Progressbar";
+import ScrollbarsWrapper from "../MyCustomComponents/ScrollbarsWrapper";
 
 function Skills() {
   return (
-    <Scrollbars style={{ height: "610px" }}>
-      <Card
-        id="skills"
-        bg="light"
-        border="info"
-        style={{ marginBottom: "10px" }}
-      >
-        <Card.Body>
-          <SectionTitle1>Skills</SectionTitle1>
-          <Divider />
-          <SectionTitle>
-            <FontAwesomeIcon icon={faUsers} />
-            <SectionTitle3>Social Skills</SectionTitle3>
-          </SectionTitle>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <SectionTitle>
-            <FontAwesomeIcon icon={faLaptop} />
-            <SectionTitle3>Software Skills</SectionTitle3>
-          </SectionTitle>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <SectionTitle>
-            <FontAwesomeIcon icon={faCode} />
-            <SectionTitle3>Coding Skills</SectionTitle3>
-          </SectionTitle>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-          <Progress>
-            <Progressbar>
-              <span>100%</span>
-              <span>ReactJS</span>
-            </Progressbar>
-          </Progress>
-        </Card.Body>
-      </Card>
-    </Scrollbars>
+    <ScrollbarsWrapper>
+      <Scrollbars style={{ height: "610px" }}>
+        <Card
+          id="skills"
+          bg="light"
+          border="info"
+          style={{ marginBottom: "10px" }}
+        >
+          <Card.Body>
+            <SectionTitle1>Skills</SectionTitle1>
+            <Divider />
+            <SectionTitle>
+              <FontAwesomeIcon icon={faUsers} />
+              <SectionTitle3>Social Skills</SectionTitle3>
+            </SectionTitle>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <SectionTitle>
+              <FontAwesomeIcon icon={faLaptop} />
+              <SectionTitle3>Software Skills</SectionTitle3>
+            </SectionTitle>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <SectionTitle>
+              <FontAwesomeIcon icon={faCode} />
+              <SectionTitle3>Coding Skills</SectionTitle3>
+            </SectionTitle>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+            <Progress>
+              <Progressbar>
+                <span>100%</span>
+                <span>ReactJS</span>
+              </Progressbar>
+            </Progress>
+          </Card.Body>
+        </Card>
+      </Scrollbars>
+    </ScrollbarsWrapper>
   );
 }
 

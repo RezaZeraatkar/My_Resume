@@ -2,15 +2,29 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Alert from "react-bootstrap/Alert";
 import Divider from "../MyCustomComponents/Divider";
+import Font from "../MyCustomComponents/Font";
 
 function CardBody() {
   return (
     <>
-      <Card.Title>Card Title</Card.Title>
+      <Card.Title>
+        <Font fs={36} as="h1">
+          Hi. i'm{" "}
+          <Font fontColor="#08aeac" as="span">
+            {" "}
+            Reza Zeraatkar!
+          </Font>
+        </Font>
+        <Font fs={14} fontColor="#333" as="h2" fontSpace={1}>
+          MERN Stack Web Developer
+        </Font>
+      </Card.Title>
       <Divider />
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        <Font fs={13} fontSpace={1} fontWeight={500} as="p">
+          Founder of DotRex. Professional UI/UX designer and web developer based
+          on London. Sometimes works as a freelancer.
+        </Font>
       </Card.Text>
       <Alert
         style={{
@@ -20,7 +34,14 @@ function CardBody() {
           fontSize: "12px"
         }}
       >
-        Email: r.zeraatkar1992@gmail.com | Phone: 09354672750
+        <Font as="span" fontSpace="1" fontColor="#fff" fontWeight={600}>
+          Email:
+        </Font>{" "}
+        r.zeraatkar1992@gmail.com /{" "}
+        <Font as="span" fontSpace="1" fontColor="#fff" fontWeight={600}>
+          Phone:
+        </Font>{" "}
+        09354672750
       </Alert>
     </>
   );
