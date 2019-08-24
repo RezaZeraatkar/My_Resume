@@ -8,6 +8,7 @@ const Font = Styled.div`
     font-weight: ${props => (props.fontWeight ? props.fontWeight : 700)};
     letter-spacing: ${props => (props.fontSpace ? props.fontSpace : "-2px")};
     color: ${props => (props.fontColor ? props.fontColor : "#021533")};
+    text-transform: ${props => (props.textTransform ? props.textTransform : "")}
 `;
 
 export default Font;

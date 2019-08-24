@@ -28,7 +28,7 @@ function CardBody() {
       </Card.Text>
       <Alert
         style={{
-          backgroundColor: "#45B0AE",
+          backgroundColor: "#40A8A6",
           border: "none",
           color: "#eee",
           fontSize: "12px"

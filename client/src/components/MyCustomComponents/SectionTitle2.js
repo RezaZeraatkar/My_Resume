@@ -14,6 +14,7 @@ const SectionTitle2 = styled.h5`
   & > p {
     padding-left: 15px;
     display: inline-block;
+    font-weight: bold;
   }
 `;
 

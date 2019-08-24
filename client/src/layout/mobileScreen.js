@@ -30,22 +30,22 @@ function RenderMobile() {
         </Row>
         <Row>
           <Col md={12} xs={12} sm={12}>
-            <Resume />
+            <Resume isMobile />
           </Col>
         </Row>
         <Row>
           <Col md={12} xs={12} sm={12}>
-            <Skills />
+            <Skills isMobile />
           </Col>
         </Row>
         <Row>
           <Col md={12} xs={12} sm={12}>
-            <Portfolio />
+            <Portfolio isMobile />
           </Col>
         </Row>
         <Row>
           <Col md={12} xs={12} sm={12}>
-            <ContactMe />
+            <ContactMe isMobile />
           </Col>
         </Row>
         <Row style={{ height: "20px" }} />

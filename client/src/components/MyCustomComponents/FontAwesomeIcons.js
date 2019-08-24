@@ -23,7 +23,7 @@ const Link = styled.a`
     color: #fff;
   }
   :hover {
-    background-color: #45b0ae;
+    background-color: #40a8a6;
   }
 `;
 
