@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 // import PropTypes from 'prop-types';
 
 const SectionTitle2 = styled.h5`
@@ -12,9 +12,9 @@ const SectionTitle2 = styled.h5`
   vertical-align: center;
   line-height: 0.2;
   & > p {
-    padding-left: 15px;
+    padding-left: 10px;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 900;
   }
 `;
 

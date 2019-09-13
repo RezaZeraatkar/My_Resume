@@ -1,20 +1,20 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import { Scrollbars } from "react-custom-scrollbars";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import { Scrollbars } from 'react-custom-scrollbars';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faMap,
   faPaperPlane,
   faPhone,
-  faEnvelope
-} from "@fortawesome/free-solid-svg-icons";
-import GoogleMapComponent from "../GoogleMap/googleMap";
-import SectionTitle1 from "../MyCustomComponents/SectionTitle1";
-import SectionTitle4 from "../MyCustomComponents/SectionTitle4";
-import EmailForm from "../EmailForm/emailForm.js";
-import Font from "../MyCustomComponents/Font";
-import ScrollbarsWrapper from "../MyCustomComponents/ScrollbarsWrapper";
-import GoogleMapContainer from "../MyCustomComponents/GoogleMapContainer";
+  faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
+import GoogleMapComponent from '../GoogleMap/googleMap';
+import SectionTitle1 from '../MyCustomComponents/SectionTitle1';
+import SectionTitle4 from '../MyCustomComponents/SectionTitle4';
+import EmailForm from '../EmailForm/emailForm.js';
+import Font from '../MyCustomComponents/Font';
+import ScrollbarsWrapper from '../MyCustomComponents/ScrollbarsWrapper';
+import GoogleMapContainer from '../MyCustomComponents/GoogleMapContainer';
 
 function ContactMe(props) {
   const { isMobile } = props;
@@ -26,14 +26,13 @@ function ContactMe(props) {
             id="contact"
             bg="light"
             border="info"
-            style={{ marginBottom: "10px" }}
+            style={{ marginBottom: '10px' }}
           >
             <Card.Body>
               <SectionTitle1>
                 <Font
                   fontSpace={2}
                   fs={22}
-                  as="h2"
                   textTransform="uppercase"
                   fontWeight={700}
                 >
@@ -50,18 +49,18 @@ function ContactMe(props) {
                 />
               </GoogleMapContainer>
               <SectionTitle4>
-                <FontAwesomeIcon style={{ fontSize: "14px" }} icon={faMap} />
+                <FontAwesomeIcon style={{ fontSize: '14px' }} icon={faMap} />
                 <p>Address</p>
               </SectionTitle4>
               <p>My Address Here</p>
               <SectionTitle4>
-                <FontAwesomeIcon style={{ fontSize: "14px" }} icon={faPhone} />
+                <FontAwesomeIcon style={{ fontSize: '14px' }} icon={faPhone} />
                 <p>Phone</p>
               </SectionTitle4>
               <p>09354672750</p>
               <SectionTitle4>
                 <FontAwesomeIcon
-                  style={{ fontSize: "14px" }}
+                  style={{ fontSize: '14px' }}
                   icon={faEnvelope}
                 />
                 <p>E-Mail</p>
@@ -69,7 +68,7 @@ function ContactMe(props) {
               <p>r.zeraatkar1992@gmail.com</p>
               <SectionTitle4>
                 <FontAwesomeIcon
-                  style={{ fontSize: "14px" }}
+                  style={{ fontSize: '14px' }}
                   icon={faPaperPlane}
                 />
                 <p>Send Me A Message</p>
@@ -80,19 +79,18 @@ function ContactMe(props) {
         </>
       ) : (
         <ScrollbarsWrapper>
-          <Scrollbars style={{ height: "610px" }}>
+          <Scrollbars style={{ height: '610px' }}>
             <Card
               id="contact"
               bg="light"
               border="info"
-              style={{ marginBottom: "10px" }}
+              style={{ marginBottom: '10px' }}
             >
               <Card.Body>
                 <SectionTitle1>
                   <Font
                     fontSpace={2}
                     fs={22}
-                    as="h2"
                     textTransform="uppercase"
                     fontWeight={700}
                   >
@@ -109,13 +107,13 @@ function ContactMe(props) {
                   />
                 </GoogleMapContainer>
                 <SectionTitle4>
-                  <FontAwesomeIcon style={{ fontSize: "14px" }} icon={faMap} />
+                  <FontAwesomeIcon style={{ fontSize: '14px' }} icon={faMap} />
                   <p>Address</p>
                 </SectionTitle4>
                 <p>My Address Here</p>
                 <SectionTitle4>
                   <FontAwesomeIcon
-                    style={{ fontSize: "14px" }}
+                    style={{ fontSize: '14px' }}
                     icon={faPhone}
                   />
                   <p>Phone</p>
@@ -123,7 +121,7 @@ function ContactMe(props) {
                 <p>09354672750</p>
                 <SectionTitle4>
                   <FontAwesomeIcon
-                    style={{ fontSize: "14px" }}
+                    style={{ fontSize: '14px' }}
                     icon={faEnvelope}
                   />
                   <p>E-Mail</p>
@@ -131,7 +129,7 @@ function ContactMe(props) {
                 <p>r.zeraatkar1992@gmail.com</p>
                 <SectionTitle4>
                   <FontAwesomeIcon
-                    style={{ fontSize: "14px" }}
+                    style={{ fontSize: '14px' }}
                     icon={faPaperPlane}
                   />
                   <p>Send Me A Message</p>

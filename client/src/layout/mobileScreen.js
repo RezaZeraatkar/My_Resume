@@ -1,15 +1,15 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import Profile from "../components/Profile/profile";
-import Resume from "../components/Resume/resume";
-import Skills from "../components/Skills/skills";
-import Portfolio from "../components/Portfolio/portfolio";
-import ContactMe from "../components/ContactMe/contactMe";
-import RootContainer from "../components/MyCustomComponents/RootContainer";
-import BouncyDiv from "../components/MyCustomComponents/Bouncy";
+import Profile from '../components/Profile/profile';
+import Resume from '../components/Resume/resume';
+import Skills from '../components/Skills/skills';
+import Portfolio from '../components/Portfolio/portfolio';
+import ContactMe from '../components/ContactMe/contactMe';
+import RootContainer from '../components/MyCustomComponents/RootContainer';
+import BouncyDiv from '../components/MyCustomComponents/Bouncy';
 
 // import Header from '../components/Header/header';
 
@@ -48,7 +48,7 @@ function RenderMobile() {
             <ContactMe isMobile />
           </Col>
         </Row>
-        <Row style={{ height: "20px" }} />
+        <Row style={{ height: '20px' }} />
       </Container>
     </RootContainer>
   );

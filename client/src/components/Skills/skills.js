@@ -1,16 +1,16 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import { Scrollbars } from "react-custom-scrollbars";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers, faLaptop, faCode } from "@fortawesome/free-solid-svg-icons";
-import SectionTitle from "../MyCustomComponents/SectionTitle";
-import SectionTitle1 from "../MyCustomComponents/SectionTitle1";
-import SectionTitle3 from "../MyCustomComponents/SectionTitle3";
-import Progress from "../MyCustomComponents/Progress";
-import Progressbar from "../MyCustomComponents/Progressbar";
-import ScrollbarsWrapper from "../MyCustomComponents/ScrollbarsWrapper";
-import Font from "../MyCustomComponents/Font";
-import Text from "../MyCustomComponents/Text";
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import { Scrollbars } from 'react-custom-scrollbars';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers, faLaptop, faCode } from '@fortawesome/free-solid-svg-icons';
+import SectionTitle from '../MyCustomComponents/SectionTitle';
+import SectionTitle1 from '../MyCustomComponents/SectionTitle1';
+import SectionTitle3 from '../MyCustomComponents/SectionTitle3';
+import Progress from '../MyCustomComponents/Progress';
+import Progressbar from '../MyCustomComponents/Progressbar';
+import ScrollbarsWrapper from '../MyCustomComponents/ScrollbarsWrapper';
+import Font from '../MyCustomComponents/Font';
+import Text from '../MyCustomComponents/Text';
 
 function Skills(props) {
   const { isMobile } = props;
@@ -22,14 +22,13 @@ function Skills(props) {
             id="skills"
             bg="light"
             border="info"
-            style={{ marginBottom: "10px" }}
+            style={{ marginBottom: '10px' }}
           >
             <Card.Body>
               <SectionTitle1>
                 <Font
                   fontSpace={2}
                   fs={22}
-                  as="h2"
                   textTransform="uppercase"
                   fontWeight={700}
                 >
@@ -131,19 +130,18 @@ function Skills(props) {
         </>
       ) : (
         <ScrollbarsWrapper>
-          <Scrollbars style={{ height: "610px" }}>
+          <Scrollbars style={{ height: '610px' }}>
             <Card
               id="skills"
               bg="light"
               border="info"
-              style={{ marginBottom: "10px" }}
+              style={{ marginBottom: '10px' }}
             >
               <Card.Body>
                 <SectionTitle1>
                   <Font
                     fontSpace={2}
                     fs={22}
-                    as="h2"
                     textTransform="uppercase"
                     fontWeight={700}
                   >

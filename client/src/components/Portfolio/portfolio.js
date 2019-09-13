@@ -1,17 +1,17 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import { Scrollbars } from "react-custom-scrollbars";
-import SectionTitle1 from "../MyCustomComponents/SectionTitle1";
-import ImgContainer from "../MyCustomComponents/ImgContainer";
-import ImgItem from "../MyCustomComponents/ImgItem";
-import ImgLink from "../MyCustomComponents/ImgLink";
-import ImgOverlay from "../MyCustomComponents/ImgOverlay";
-import OvelayContent from "../MyCustomComponents/OvelayContent";
-import Font from "../MyCustomComponents/Font";
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import { Scrollbars } from 'react-custom-scrollbars';
+import SectionTitle1 from '../MyCustomComponents/SectionTitle1';
+import ImgContainer from '../MyCustomComponents/ImgContainer';
+import ImgItem from '../MyCustomComponents/ImgItem';
+import ImgLink from '../MyCustomComponents/ImgLink';
+import ImgOverlay from '../MyCustomComponents/ImgOverlay';
+import OvelayContent from '../MyCustomComponents/OvelayContent';
+import Font from '../MyCustomComponents/Font';
 
-import ImgSrc1 from "../../images/por1.jpg";
-import ImgSrc2 from "../../images/por2.jpg";
-import ScrollbarsWrapper from "../MyCustomComponents/ScrollbarsWrapper";
+import ImgSrc1 from '../../images/por1.jpg';
+import ImgSrc2 from '../../images/por2.jpg';
+import ScrollbarsWrapper from '../MyCustomComponents/ScrollbarsWrapper';
 
 function Portfolio(props) {
   const { isMobile } = props;
@@ -22,14 +22,13 @@ function Portfolio(props) {
           id="portfolio"
           bg="light"
           border="info"
-          style={{ marginBottom: "10px" }}
+          style={{ marginBottom: '10px' }}
         >
           <Card.Body>
             <SectionTitle1>
               <Font
                 fontSpace={2}
                 fs={22}
-                as="h2"
                 textTransform="uppercase"
                 fontWeight={700}
               >
@@ -60,19 +59,18 @@ function Portfolio(props) {
         </Card>
       ) : (
         <ScrollbarsWrapper>
-          <Scrollbars style={{ height: "610px" }}>
+          <Scrollbars style={{ height: '610px' }}>
             <Card
               id="portfolio"
               bg="light"
               border="info"
-              style={{ marginBottom: "10px" }}
+              style={{ marginBottom: '10px' }}
             >
               <Card.Body>
                 <SectionTitle1>
                   <Font
                     fontSpace={2}
                     fs={22}
-                    as="h2"
                     textTransform="uppercase"
                     fontWeight={700}
                   >
