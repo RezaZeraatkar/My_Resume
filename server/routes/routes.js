@@ -1,17 +1,26 @@
-const router = require("express").Router();
+const router = require('express').Router();
+const ContactModel = require('../models/models');
+// const emailMe = require('../utils/mail');
 
-const Album = require("../models/models.js");
-
-router.get("/albums", async (req, res) => {
-  const albums = await Album.find({}).exec();
-  res.json(albums);
+router.post('/email', (req, res) => {
+  // Get User Data
+  const { senderName, senderemail, senderSubject, senderMessage } = req.body;
+  const contactFormData = {
+    senderName,
+    senderemail,
+    senderSubject,
+    senderMessage,
+  };
+  // Store to MongoDB
+  const Contactmdl = new ContactModel(contactFormData);
+  Contactmdl.save((err, contactData) => {
+    if (err) res.send(false);
+    else res.send(true);
+  });
 });
 
-router.post("/albums/add", async (req, res) => {
-  const newAlbum = await new Album(req.body);
-  await newAlbum.save();
-  const album = await Album.findOne(req.body);
-  res.status(201).json(album);
+router.get('/loaded', (req, res) => {
+  res.send(false);
 });
 
 module.exports = router;

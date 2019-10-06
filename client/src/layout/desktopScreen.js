@@ -1,22 +1,22 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Route, Switch } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { useState, useEffect, useRef } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // import { AnimatedSwitch, AnimatedRoute } from './AnimatedRoutes';
-import NavList from "../components/NavList/navList";
-import Profile from "../components/Profile/profile";
-import BouncyDiv from "../components/MyCustomComponents/Bouncy";
+import NavList from '../components/NavList/navList';
+import Profile from '../components/Profile/profile';
+import BouncyDiv from '../components/MyCustomComponents/Bouncy';
 
-import Resume from "../components/Resume/resume";
-import Skills from "../components/Skills/skills";
-import Portfolio from "../components/Portfolio/portfolio";
-import ContactMe from "../components/ContactMe/contactMe";
-import Home from "../components/Home/home";
-import NotFoundComponent from "../components/NotFoundComponent/notFoundComponent";
+import Resume from '../components/Resume/resume';
+import Skills from '../components/Skills/skills';
+import Portfolio from '../components/Portfolio/portfolio';
+import ContactMe from '../components/ContactMe/contactMe';
+import Home from '../components/Home/home';
+import NotFoundComponent from '../components/NotFoundComponent/notFoundComponent';
 
-import "./styles.css";
+import './styles.css';
 
 // Custom Hook
 function usePrevious(value) {
@@ -36,28 +36,26 @@ function RenderDesktop(props) {
   const duration = 1000;
   const { routerProps } = props;
   const [pageRoute, setPageRoute] = useState(
-    routerProps.routerProps.location.pathname.split("/")[1]
+    routerProps.routerProps.location.pathname.split('/')[1],
   );
   // Get the previous value (was passed into hook on last render)
   const prevPageRoute = usePrevious(
-    routerProps.routerProps.location.pathname.split("/")[1]
+    routerProps.routerProps.location.pathname.split('/')[1],
   );
-
-  console.log("prevPageRoute: ", prevPageRoute);
 
   useEffect(() => {
     const handleHomeStyle = () => {
-      setPageRoute(routerProps.routerProps.location.pathname.split("/")[1]);
+      setPageRoute(routerProps.routerProps.location.pathname.split('/')[1]);
     };
     handleHomeStyle();
   }, [routerProps.routerProps.location.pathname]);
 
   return (
     <div
-      className={pageRoute !== "" ? "main-container routes" : "main-container"}
+      className={pageRoute !== '' ? 'main-container routes' : 'main-container'}
     >
       <Container>
-        <Row style={{ height: "40px" }} />
+        <Row style={{ height: '20px' }} />
         <Row>
           {/* SidebarSection */}
           <Col lg={2} xl={2}>
@@ -76,17 +74,17 @@ function RenderDesktop(props) {
             <BouncyDiv>
               <TransitionGroup className="transition-group">
                 <CSSTransition
-                  key={routerProps.routerProps.location.pathname.split("/")[1]}
+                  key={routerProps.routerProps.location.pathname.split('/')[1]}
                   timeout={{ enter: duration, exit: duration }}
                   classNames={
-                    prevPageRoute !== "" ? "page-slide" : "page-slide ps"
+                    prevPageRoute !== '' ? 'page-slide' : 'page-slide ps'
                   }
                   mountOnEnter
                   unmountOnExit
                 >
                   <div
                     className={
-                      prevPageRoute !== "" ? "page-slide" : "page-slide ps"
+                      prevPageRoute !== '' ? 'page-slide' : 'page-slide ps'
                     }
                   >
                     <Switch location={props.location}>
@@ -123,7 +121,7 @@ function RenderDesktop(props) {
             </BouncyDiv>
           </Col>
         </Row>
-        <Row style={{ height: "20px" }} />
+        <Row style={{ height: '20px' }} />
       </Container>
     </div>
   );

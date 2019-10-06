@@ -1,21 +1,24 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const albumSchema = new mongoose.Schema({
-  title: {
-    type: String
+const contactMeSchema = new mongoose.Schema({
+  senderName: {
+    type: String,
   },
-  artist: {
-    type: String
+  senderemail: {
+    type: String,
+    required: true,
   },
-  art: {
-    type: String
+  senderSubject: {
+    type: String,
   },
-  year: {
-    type: String
+  senderMessage: {
+    type: String,
   },
-  rating: {
-    type: Number
-  }
+  date: {
+    type: Date,
+    required: true,
+    default: Date.now,
+  },
 });
 
-module.exports = mongoose.model("Album", albumSchema);
+module.exports = mongoose.model('ContactMe', contactMeSchema);
