@@ -28,8 +28,8 @@ function Layout(props) {
   }, []);
 
   useEffect(() => {
-    const fetchItems = async () => {
-      const response = await axios.get('http://localhost:8080/api/loaded');
+    const fetchItems = () => {
+      const response = axios.get('/api/loaded');
       setloaded(response.data);
     };
     fetchItems();

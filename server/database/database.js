@@ -5,8 +5,12 @@ mongoose.Promise = global.Promise;
 
 const env = process.env.NODE_ENV || 'development';
 // eslint-disable-next-line prettier/prettier
-const MongoURI =
-  process.env.MONGODBLAB_URI || `mongodb://localhost/mern_${env}`;
+let MongoURI = null;
+if (env === 'production') {
+  MongoURI = process.env.MONGODBLAB_URI;
+} else {
+  MongoURI = 'mongodb://localhost/mern_' + env;
+}
 
 module.exports = {
   mongoose,
