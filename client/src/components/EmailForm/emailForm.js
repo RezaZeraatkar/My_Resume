@@ -35,7 +35,7 @@ function EmailForm() {
       setAlertCategory(true);
     } else if (alertType === 'clientSideError') {
       setAlertMessage(
-        'Make Sure You Fill All The Required Information And Then Try Again!',
+        'Make Sure You Filled in All The Required Information And Then Try Again!',
       );
       setAlertCategory(false);
       // setAlertCategory(false);

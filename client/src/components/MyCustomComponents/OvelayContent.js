@@ -1,4 +1,4 @@
-import Styled from "styled-components";
+import Styled from 'styled-components';
 
 const OvelayContent = Styled.div`
 position: absolute;    

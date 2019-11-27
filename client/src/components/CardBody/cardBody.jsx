@@ -16,14 +16,19 @@ function CardBody() {
           </Font>
         </Font>
         <Font fs={14} fontColor="#333" as="h2" fontSpace={1}>
-          MERN Stack Web Developer
+          MERN Stack Web Developer / Data Scientist
         </Font>
       </Card.Title>
       <Divider />
       <Card.Text>
         <Font fs={13} fontSpace={1} fontWeight={500}>
-          Founder of DotRex. Professional UI/UX designer and web developer based
-          on London. Sometimes works as a freelancer.
+          I'm a passionate Web developer pursuing new opportunities to take my
+          skills into the next level.
+          <br />
+          <i>
+            The key to success is failure and the key to failure is to not stand
+            by!
+          </i>
         </Font>
       </Card.Text>
       <Alert

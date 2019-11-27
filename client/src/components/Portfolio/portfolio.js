@@ -82,7 +82,7 @@ function Portfolio(props) {
                     <ImgLink backImg={ImgSrc1} href="#">
                       <ImgOverlay>
                         <OvelayContent>
-                          <h2>Title</h2>
+                          <h2>A Sample mobile Web Application</h2>
                         </OvelayContent>
                       </ImgOverlay>
                     </ImgLink>

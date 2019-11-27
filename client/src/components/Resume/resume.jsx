@@ -38,54 +38,46 @@ function Resume(props) {
                 <p>Education</p>
               </SectionTitle2>
               <DoubleBorderFrame>
-                <h2>Bacholar Degree Of Information Technology</h2>
-
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                <SectionTitle1 borderBottomColor="#CCCCCC">
+                  Bacholar Degree Of Information Technology
+                  <p>
+                    birjand university of science and technology (2011-2015)
+                  </p>
+                </SectionTitle1>
+                {/* <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text> */}
+              </DoubleBorderFrame>
+              <DoubleBorderFrame>
+                <SectionTitle1 borderBottomColor="#CCCCCC">
+                  Master Of E-Commerce
+                  <p>Iran university of science and technology (2017-2020)</p>
+                </SectionTitle1>
+                {/* <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text> */}
               </DoubleBorderFrame>
             </Card.Body>
             <Card.Body>
               <SectionTitle2>
-                <FontAwesomeIcon icon={faUniversity} />
-                <p>Card Title</p>
+                <FontAwesomeIcon icon={faTag} />
+                <p>Work Experience</p>
               </SectionTitle2>
               <DoubleBorderFrame>
-                <h5>header</h5>
+                <SectionTitle1 borderBottomColor="#CCCCCC">
+                  English Translator At{' '}
+                  <a href="https://www.tarjomic.com" target="blank">
+                    Tarjomic.com
+                  </a>
+                  <p>For Two Years</p>
+                </SectionTitle1>
 
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </DoubleBorderFrame>
-            </Card.Body>
-            <Card.Body>
-              <SectionTitle2>
-                <FontAwesomeIcon icon={faUniversity} />
-                <p>Card Title</p>
-              </SectionTitle2>
-              <DoubleBorderFrame>
-                <h5>header</h5>
-
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </DoubleBorderFrame>
-            </Card.Body>
-            <Card.Body>
-              <SectionTitle2>
-                <FontAwesomeIcon icon={faUniversity} />
-                <p>Card Title</p>
-              </SectionTitle2>
-              <DoubleBorderFrame>
-                <h5>header</h5>
-
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
+                {/* <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </Card.Text> */}
               </DoubleBorderFrame>
             </Card.Body>
           </Card>
@@ -122,20 +114,20 @@ function Resume(props) {
                       birjand university of science and technology (2011-2015)
                     </p>
                   </SectionTitle1>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </DoubleBorderFrame>
                 <DoubleBorderFrame>
                   <SectionTitle1 borderBottomColor="#CCCCCC">
                     Master Of E-Commerce
                     <p>Iran university of science and technology (2017-2020)</p>
                   </SectionTitle1>
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </DoubleBorderFrame>
               </Card.Body>
               <Card.Body>
@@ -145,54 +137,17 @@ function Resume(props) {
                 </SectionTitle2>
                 <DoubleBorderFrame>
                   <SectionTitle1 borderBottomColor="#CCCCCC">
-                    Bacholar Degree Of Information Technology
-                    <p>
-                      birjand university of science and technology (2011-2015)
-                    </p>
+                    English Translator At{' '}
+                    <a href="https://www.tarjomic.com" target="blank">
+                      Tarjomic.com
+                    </a>
+                    <p>For Two Years</p>
                   </SectionTitle1>
 
-                  <Card.Text>
+                  {/* <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
-                  </Card.Text>
-                </DoubleBorderFrame>
-              </Card.Body>
-              <Card.Body>
-                <SectionTitle2>
-                  <FontAwesomeIcon icon={faUniversity} />
-                  <p>Card Title</p>
-                </SectionTitle2>
-                <DoubleBorderFrame>
-                  <SectionTitle1 borderBottomColor="#CCCCCC">
-                    Bacholar Degree Of Information Technology
-                    <p>
-                      birjand university of science and technology (2011-2015)
-                    </p>
-                  </SectionTitle1>
-
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                </DoubleBorderFrame>
-              </Card.Body>
-              <Card.Body>
-                <SectionTitle2>
-                  <FontAwesomeIcon icon={faUniversity} />
-                  <p>Card Title</p>
-                </SectionTitle2>
-                <DoubleBorderFrame>
-                  <SectionTitle1 borderBottomColor="#CCCCCC">
-                    Bacholar Degree Of Information Technology
-                    <p>
-                      birjand university of science and technology (2011-2015)
-                    </p>
-                  </SectionTitle1>
-
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+                  </Card.Text> */}
                 </DoubleBorderFrame>
               </Card.Body>
             </Card>
