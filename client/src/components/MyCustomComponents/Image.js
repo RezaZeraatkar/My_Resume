@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const RoundedCircleImage = styled.img.attrs(props => ({
-  src: props.url
+  src: props.url,
 }))`
   border: 6px solid #ddd;
   width: 200px;
@@ -15,7 +15,7 @@ const RoundedCircleImage = styled.img.attrs(props => ({
 `;
 
 RoundedCircleImage.prototype = {
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
 };
 
 export default RoundedCircleImage;

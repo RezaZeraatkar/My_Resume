@@ -5,7 +5,7 @@ import RoundedCircleImage from '../MyCustomComponents/Image.js';
 import CardBody from '../CardBody/cardBody';
 import SocialIcons from '../SocialIcons/socialIcons';
 
-import MyProfileImage from '../../images/profile.jpg';
+import MyProfileImage from '../../images/myImg1.jpg';
 
 function profile() {
   return (
@@ -15,7 +15,6 @@ function profile() {
       className="text-center"
       style={{
         marginBottom: '10px',
-        height: '610px',
         zIndex: '100',
       }}
     >

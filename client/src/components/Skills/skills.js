@@ -2,7 +2,13 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faLaptop, faCode } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUsers,
+  faLaptop,
+  faCode,
+  faChartLine,
+  faToolbox,
+} from '@fortawesome/free-solid-svg-icons';
 import SectionTitle from '../MyCustomComponents/SectionTitle';
 import SectionTitle1 from '../MyCustomComponents/SectionTitle1';
 import SectionTitle3 from '../MyCustomComponents/SectionTitle3';
@@ -244,7 +250,22 @@ function Skills(props) {
                 <ProgressType floatLeft>Numpy/Pandas/Matplotlib</ProgressType>
               </Progress>
               <SectionTitle>
-                <FontAwesomeIcon icon={faCode} />
+                <FontAwesomeIcon icon={faChartLine} />
+                <SectionTitle3>
+                  <b>Financial Skills</b>
+                </SectionTitle3>
+              </SectionTitle>
+              <Progress>
+                <Progressbar backColor="#3FAEAD" width={70} />
+                <ProgressPercentage floatRight fontWeight="bold">
+                  70%
+                </ProgressPercentage>
+                <ProgressType floatLeft>
+                  Stock Market Technical Analysis
+                </ProgressType>
+              </Progress>
+              <SectionTitle>
+                <FontAwesomeIcon icon={faToolbox} />
                 <SectionTitle3>
                   <b>Tools and others</b>
                 </SectionTitle3>
@@ -519,7 +540,22 @@ function Skills(props) {
                   <ProgressType floatLeft>Numpy/Pandas/Matplotlib</ProgressType>
                 </Progress>
                 <SectionTitle>
-                  <FontAwesomeIcon icon={faCode} />
+                  <FontAwesomeIcon icon={faChartLine} />
+                  <SectionTitle3>
+                    <b>Financial Skills</b>
+                  </SectionTitle3>
+                </SectionTitle>
+                <Progress>
+                  <Progressbar backColor="#3FAEAD" width={70} />
+                  <ProgressPercentage floatRight fontWeight="bold">
+                    70%
+                  </ProgressPercentage>
+                  <ProgressType floatLeft>
+                    Stock Market Technical Analysis
+                  </ProgressType>
+                </Progress>
+                <SectionTitle>
+                  <FontAwesomeIcon icon={faToolbox} />
                   <SectionTitle3>
                     <b>Tools and others</b>
                   </SectionTitle3>

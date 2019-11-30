@@ -52,7 +52,10 @@ function ContactMe(props) {
                 <FontAwesomeIcon style={{ fontSize: '14px' }} icon={faMap} />
                 <p>Address</p>
               </SectionTitle4>
-              <p>My Address Here</p>
+              <p>
+                Tehran - Jashnvareh Avenue - Zohdi Street - IUST Jashnvareh
+                Dormitory{' '}
+              </p>
               <SectionTitle4>
                 <FontAwesomeIcon style={{ fontSize: '14px' }} icon={faPhone} />
                 <p>Phone</p>
@@ -110,7 +113,10 @@ function ContactMe(props) {
                   <FontAwesomeIcon style={{ fontSize: '14px' }} icon={faMap} />
                   <p>Address</p>
                 </SectionTitle4>
-                <p>My Address Here</p>
+                <p>
+                  Tehran - Jashnvareh Avenue - Zohdi Street - IUST Jashnvareh
+                  Dormitory{' '}
+                </p>
                 <SectionTitle4>
                   <FontAwesomeIcon
                     style={{ fontSize: '14px' }}

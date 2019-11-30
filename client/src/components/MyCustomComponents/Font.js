@@ -10,6 +10,7 @@ const Font = Styled.span`
     color: ${props => (props.fontColor ? props.fontColor : '#021533')};
     text-transform: ${props =>
       props.textTransform ? props.textTransform : ''};
+    padding: "5px";
 `;
 
 export default Font;

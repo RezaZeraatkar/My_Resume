@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
 const ImgOverlay = Styled.div`
-    position: relatie;
+    position: relative;
     width: inherit;
     height: inherit;
     background: black;
