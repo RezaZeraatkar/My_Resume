@@ -1,4 +1,4 @@
-# My_Resume [Depricated]
+# My_Resume [deprecated]
 
 This is my Resume website.
 
